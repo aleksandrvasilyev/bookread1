@@ -1,0 +1,8 @@
+NAME="testsite"                                  # Name of the application
+DJANGODIR=/root/testsite/mysite            # Django project directory
+SOCKFILE=/root/testsite/mysite/gunicorn.sock  # we will communicte using this unix socket
+USER=root                                        # the user to run as
+GROUP=root                                     # the group to run as
+NUM_WORKERS=3                                     # how many worker processes should Gunicorn spawn
+DJANGO_SETTINGS_MODULE=mysite.settings             # which settings file should Django use
+DJANGO_WSGI_MODULE=mysite.wsgi
